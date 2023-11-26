@@ -47,10 +47,10 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-/* ignurof */
+/* ignurof - mobile first - 390x844 was my reference point */
 main {
 	margin: 0 auto;
-	width: 75%;
+	width: 80%;
 	display: flex;
 	flex-direction: column;
 	color: #101010;
@@ -61,11 +61,16 @@ h1 {
 	text-align: center;
 	margin-top: 2em;
 	margin-bottom: 0.2em;
-	font-size: 6em;
+	font-size: 4em;
 	color: #E1E1E1;
 	-webkit-text-stroke-width: 3px;
 	-webkit-text-stroke-color: #242424;
 }
+
+h2 {
+		margin-bottom: 0.2em;
+	}
+
 
 ul {
 	margin: 0;
@@ -79,10 +84,11 @@ a {
 
 #card {
 	border-radius: 4px;
-	width: 50%;
+	width: 90%;
 	margin: 0 auto;
 	padding: 2em;
 	display: flex;
+	flex-direction: column;
 	justify-content: space-evenly;
 	background-color: #E1E1E1;
 	box-shadow:
@@ -119,7 +125,123 @@ a {
 	text-align: end;
 }
 #socials ul {
-	text-align: start;
+	text-align: end;
 	align-self: flex-end;
 }
 
+/* 
+  Desktops
+  1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+	main {
+		width: 75%;
+	}
+
+	h1 {
+		margin-top: 2em;
+		margin-bottom: 0.2em;
+		font-size: 6em;
+	}
+
+		#card {
+		border-radius: 4px;
+		width: 50%;
+		padding: 2em;
+		flex-direction: row;
+	}
+
+	#websites {
+		align-self: flex-start;
+	}
+
+	#contacts {
+		text-align: center;
+	}
+	#contacts ul {
+		align-self: center;
+	}
+
+	#socials {
+		text-align: end;
+	}
+	#socials ul {
+		text-align: end;
+		align-self: flex-end;
+	}
+
+}
+
+/* 
+Laptops, Desktops
+1025px to 1280px
+ */
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+
+/* 
+Tablets, Ipads (portrait)
+768px to 1024px
+ */
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* 
+Tablets, Ipads (landscape)
+768px to 1024px
+ */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	h1 {
+		margin-top: 1.2em;
+		margin-bottom: 0.2em;
+		font-size: 6em;
+	}
+
+
+	#card {
+		flex-direction: row;
+	}
+
+	#websites {
+		align-self: flex-start;
+	}
+
+	#contacts {
+		text-align: center;
+	}
+	#contacts ul {
+		align-self: center;
+	}
+
+	#socials {
+		text-align: end;
+	}
+	#socials ul {
+		text-align: end;
+		align-self: flex-end;
+	}
+}
+
+/* 
+Low Resolution Tablets, Mobiles (Landscape)
+481px to 767px
+ */
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+
+@media (min-width: 320px) and (max-width: 844px) and (orientation: landscape) {
+	h1 {
+		font-size: 4em;
+	}
+}
+/* 
+Most of the Smartphones Mobiles (Portrait)
+320px to 479px
+ */
+@media (min-width: 320px) and (max-width: 480px) {
+	#contacts {
+		margin-top: 4em;
+		margin-bottom: 4em;
+	}
+}
