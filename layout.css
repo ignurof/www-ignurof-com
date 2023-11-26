@@ -104,7 +104,8 @@ a {
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
-	justify-content: flex-start;
+	align-self: center;
+	text-align: center;
 }
 
 #contacts {
@@ -114,7 +115,6 @@ a {
 	text-align: center;
 }
 #contacts ul {
-	text-align: start;
 	align-self: center;
 }
 
@@ -122,11 +122,10 @@ a {
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
-	text-align: end;
+	text-align: center;
 }
 #socials ul {
-	text-align: end;
-	align-self: flex-end;
+	text-align: center;
 }
 
 /* 
@@ -183,7 +182,11 @@ Laptops, Desktops
 Tablets, Ipads (portrait)
 768px to 1024px
  */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+	#contacts {
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
 }
 
 /* 
@@ -204,13 +207,6 @@ Tablets, Ipads (landscape)
 
 	#websites {
 		align-self: flex-start;
-	}
-
-	#contacts {
-		text-align: center;
-	}
-	#contacts ul {
-		align-self: center;
 	}
 
 	#socials {
