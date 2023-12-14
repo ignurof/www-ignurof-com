@@ -301,6 +301,12 @@ Low Resolution Tablets, Mobiles (Landscape)
 		margin-top: 0;
 	}
 
+	#card {
+		border-radius: 4px;
+		width: 75%;
+		padding: 2em;
+		flex-direction: row;
+	}
 	#websites {
 		align-self: flex-start;
 	}
