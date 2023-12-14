@@ -296,7 +296,32 @@ Low Resolution Tablets, Mobiles (Landscape)
 	}
 }
 /* fix for galaxy s20 360x800 */
-@media (min-width: 360px) and (max-width: 480px) and (max-height: 800px) {
+@media (min-width: 360px) and (max-width: 480px) and (max-height: 800px) and (orientation: landscape){
+	h1 {
+		margin-top: 0;
+	}
+
+	#websites {
+		align-self: flex-start;
+	}
+
+	#contacts {
+		text-align: center;
+	}
+	#contacts ul {
+		align-self: center;
+	}
+
+	#socials {
+		text-align: end;
+	}
+	#socials ul {
+		text-align: end;
+		align-self: flex-end;
+	}
+}
+
+@media (min-width: 360px) and (max-width: 480px) and (max-height: 800px) and (orientation: portrait){
 	h1 {
 		margin-top: 0;
 	}
