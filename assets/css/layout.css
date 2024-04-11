@@ -1,169 +1,126 @@
-/* https://www.joshwcomeau.com/css/custom-css-reset/ */
-/*
-  1. Use a more-intuitive box-sizing model.
-*/
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-/*
-  2. Remove default margin
-*/
+/* Styling Resets */
 * {
-  margin: 0;
-}
-/*
-  Typographic tweaks!
-  3. Add accessible line-height
-  4. Improve text rendering
-*/
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  background-color: #333333;
-}
-/*
-  5. Improve media defaults
-*/
-img, picture, video, canvas, svg {
-  display: block;
-  max-width: 100%;
-}
-/*
-  6. Remove built-in form typography styles
-*/
-input, button, textarea, select {
-  font: inherit;
-}
-/*
-  7. Avoid text overflows
-*/
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
-}
-/*
-  8. Create a root stacking context
-*/
-#root, #__next {
-  isolation: isolate;
+    margin: 0;
+    padding: 0;
 }
 
-/* ignurof - mobile first - 390x844 was my reference point */
+/* General */
 main {
-	margin: 0 auto;
-	width: 80%;
-	display: flex;
-	flex-direction: column;
-	color: #101010;
-	font-family: sans-serif;
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    color: #101010;
+    font-family: sans-serif;
 }
 
 h1 {
-	text-align: center;
-	margin-top: 2em;
-	margin-bottom: 0.2em;
-	font-size: 4em;
-	color: #E1E1E1;
-	-webkit-text-stroke-width: 3px;
-	-webkit-text-stroke-color: #242424;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 0.2em;
+    font-size: 4em;
+    color: #E1E1E1;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #242424;
 }
 
 h2 {
-		margin-bottom: 0.2em;
-	}
-
+    margin-bottom: 0.2em;
+}
 
 ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 a {
-	color: #0e5373; 
+    color: #0e5373; 
 }
 
 #card {
-	border-radius: 4px;
-	width: 90%;
-	margin: 0 auto;
-	padding: 2em;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	background-color: #E1E1E1;
-	box-shadow:
-	0 2px 2px hsl(0deg 0% 0% / 0.075),
-	0 4px 4px hsl(0deg 0% 0% / 0.075),
-	0 8px 8px hsl(0deg 0% 0% / 0.075),
-	0 16px 16px hsl(0deg 0% 0% / 0.075),
-	0 32px 32px hsl(0deg 0% 0% / 0.075)
-	;
+    border-radius: 4px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #E1E1E1;
+    box-shadow:
+    0 2px 2px hsl(0deg 0% 0% / 0.075),
+    0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075),
+    0 16px 16px hsl(0deg 0% 0% / 0.075),
+    0 32px 32px hsl(0deg 0% 0% / 0.075)
+    ;
 }
 
 #websites {
-	display: flex;
-	flex-direction: column;
-	flex-grow: 1;
-	align-self: center;
-	text-align: start;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-self: center;
+    text-align: start;
 }
 
 #contacts {
-	display: flex;
-	flex-direction: column;
-	flex-grow: 1;
-	text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: center;
 }
 #contacts ul {
-	align-self: center;
+    align-self: center;
 }
 
 #socials {
-	display: flex;
-	flex-direction: column;
-	flex-grow: 1;
-	text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: center;
 }
 #socials ul {
-	text-align: center;
+    text-align: center;
 }
 
 @media (min-width: 1281px) and (min-height: 769px){
-	main {
-		width: 75%;
-	}
+    main {
+        width: 75%;
+    }
 
-	h1 {
-		margin-top: 2em;
-		margin-bottom: 0.2em;
-		font-size: 6em;
-	}
+    h1 {
+        margin-top: 2em;
+        margin-bottom: 0.2em;
+        font-size: 6em;
+    }
 
-	#card {
-		border-radius: 4px;
-		width: 50%;
-		padding: 2em;
-		flex-direction: row;
-	}
+    #card {
+        border-radius: 4px;
+        width: 50%;
+        padding: 2em;
+        flex-direction: row;
+    }
 
-	#websites {
-		align-self: flex-start;
-	}
+    #websites {
+        align-self: flex-start;
+    }
 
-	#contacts {
-		text-align: center;
-	}
-	#contacts ul {
-		align-self: center;
-	}
+    #contacts {
+        text-align: center;
+    }
+    #contacts ul {
+        align-self: center;
+    }
 
-	#socials {
-		text-align: end;
-	}
-	#socials ul {
-		text-align: end;
-		align-self: flex-end;
-	}
+    #socials {
+        text-align: end;
+    }
+    #socials ul {
+        text-align: end;
+        align-self: flex-end;
+    }
 
 
 }
@@ -173,41 +130,41 @@ Desktops and my laptop (1366x768)
 1281px to higher resolution desktops
  */
 @media (min-width: 1281px) and (max-height: 768px){
-	main {
-		width: 75%;
-	}
+    main {
+        width: 75%;
+    }
 
-	h1 {
-		margin-top: 1em;
-		margin-bottom: 0.2em;
-		font-size: 6em;
-	}
+    h1 {
+        margin-top: 1em;
+        margin-bottom: 0.2em;
+        font-size: 6em;
+    }
 
-	#card {
-		border-radius: 4px;
-		width: 50%;
-		padding: 2em;
-		flex-direction: row;
-	}
+    #card {
+        border-radius: 4px;
+        width: 50%;
+        padding: 2em;
+        flex-direction: row;
+    }
 
-	#websites {
-		align-self: flex-start;
-	}
+    #websites {
+        align-self: flex-start;
+    }
 
-	#contacts {
-		text-align: center;
-	}
-	#contacts ul {
-		align-self: center;
-	}
+    #contacts {
+        text-align: center;
+    }
+    #contacts ul {
+        align-self: center;
+    }
 
-	#socials {
-		text-align: end;
-	}
-	#socials ul {
-		text-align: end;
-		align-self: flex-end;
-	}
+    #socials {
+        text-align: end;
+    }
+    #socials ul {
+        text-align: end;
+        align-self: flex-end;
+    }
 
 }
 
@@ -219,35 +176,35 @@ Tablets, Ipads (portrait)
 768px to 1024px
  */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-	h1 {
-		margin-top: 2em;
-		margin-bottom: 0.2em;
-		font-size: 6em;
-	}
-	#card {
-		border-radius: 4px;
-		width: 75%;
-		padding: 2em;
-		flex-direction: row;
-	}
-	#websites {
-		align-self: flex-start;
-	}
+    h1 {
+        margin-top: 2em;
+        margin-bottom: 0.2em;
+        font-size: 6em;
+    }
+    #card {
+        border-radius: 4px;
+        width: 75%;
+        padding: 2em;
+        flex-direction: row;
+    }
+    #websites {
+        align-self: flex-start;
+    }
 
-	#contacts {
-		text-align: center;
-	}
-	#contacts ul {
-		align-self: center;
-	}
+    #contacts {
+        text-align: center;
+    }
+    #contacts ul {
+        align-self: center;
+    }
 
-	#socials {
-		text-align: end;
-	}
-	#socials ul {
-		text-align: end;
-		align-self: flex-end;
-	}
+    #socials {
+        text-align: end;
+    }
+    #socials ul {
+        text-align: end;
+        align-self: flex-end;
+    }
 }
 
 /* 
@@ -255,31 +212,31 @@ Tablets, Ipads (landscape)
 768px to 1024px
  */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-	h1 {
-		margin-top: 1.2em;
-		margin-bottom: 0.2em;
-		font-size: 6em;
-	}
+    h1 {
+        margin-top: 1.2em;
+        margin-bottom: 0.2em;
+        font-size: 6em;
+    }
 
 
-	#card {
-		border-radius: 4px;
-		width: 60%;
-		padding: 2em;
-		flex-direction: row;
-	}
+    #card {
+        border-radius: 4px;
+        width: 60%;
+        padding: 2em;
+        flex-direction: row;
+    }
 
-	#websites {
-		align-self: flex-start;
-	}
+    #websites {
+        align-self: flex-start;
+    }
 
-	#socials {
-		text-align: end;
-	}
-	#socials ul {
-		text-align: end;
-		align-self: flex-end;
-	}
+    #socials {
+        text-align: end;
+    }
+    #socials ul {
+        text-align: end;
+        align-self: flex-end;
+    }
 }
 
 /* 
@@ -291,56 +248,56 @@ Low Resolution Tablets, Mobiles (Landscape)
 }
 
 @media (min-width: 320px) and (max-width: 844px) and (orientation: landscape) {
-	h1 {
-		font-size: 4em;
-	}
+    h1 {
+        font-size: 4em;
+    }
 }
 /* fix for galaxy s20 360x800 */
 @media (min-width: 360px) and (max-width: 480px) and (max-height: 800px) and (orientation: landscape){
-	h1 {
-		margin-top: 0;
-	}
+    h1 {
+        margin-top: 0;
+    }
 
-	#card {
-		border-radius: 4px;
-		width: 75%;
-		padding: 2em;
-		flex-direction: row;
-	}
-	#websites {
-		align-self: flex-start;
-	}
+    #card {
+        border-radius: 4px;
+        width: 75%;
+        padding: 2em;
+        flex-direction: row;
+    }
+    #websites {
+        align-self: flex-start;
+    }
 
-	#contacts {
-		text-align: center;
-	}
-	#contacts ul {
-		align-self: center;
-	}
+    #contacts {
+        text-align: center;
+    }
+    #contacts ul {
+        align-self: center;
+    }
 
-	#socials {
-		text-align: end;
-	}
-	#socials ul {
-		text-align: end;
-		align-self: flex-end;
-	}
+    #socials {
+        text-align: end;
+    }
+    #socials ul {
+        text-align: end;
+        align-self: flex-end;
+    }
 }
 
 @media (min-width: 360px) and (max-width: 480px) and (max-height: 800px) and (orientation: portrait){
-	h1 {
-		margin-top: 0;
-	}
+    h1 {
+        margin-top: 0;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 844px) and (orientation: landscape){
-	h1 {
-		margin-top: 0.6em;
-	}
+    h1 {
+        margin-top: 0.6em;
+    }
 
-	#card {
-		width: 75%;
-	}
+    #card {
+        width: 75%;
+    }
 }
 
 /* 
@@ -348,24 +305,24 @@ Most of the Smartphones Mobiles (Portrait)
 320px to 479px
  */
 @media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
-	main {
-		max-height: 99vh;
-	}
-	#contacts {
-		margin-top: 4em;
-		margin-bottom: 4em;
-	}
-	#websites {
-		align-self: center;
-		text-align: center;
-	}
+    main {
+        max-height: 99vh;
+    }
+    #contacts {
+        margin-top: 4em;
+        margin-bottom: 4em;
+    }
+    #websites {
+        align-self: center;
+        text-align: center;
+    }
 
-	#socials {
-		text-align: center;
-	}
-	#socials ul {
-		text-align: center;
-		align-self: center;
-	}
+    #socials {
+        text-align: center;
+    }
+    #socials ul {
+        text-align: center;
+        align-self: center;
+    }
 
 }
